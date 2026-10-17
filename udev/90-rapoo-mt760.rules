@@ -1,0 +1,12 @@
+# Rapoo MT760L Multi-Mode Mouse Rules
+# Wireless Gaming Receiver mode
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="24ae", ATTRS{idProduct}=="1870", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="24ae", ATTRS{idProduct}=="1870", MODE="0666", TAG+="uaccess"
+
+# Wired USB Composite mode
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="24ae", ATTRS{idProduct}=="4500", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="24ae", ATTRS{idProduct}=="4500", MODE="0666", TAG+="uaccess"
+
+# Telink Bootloader mode
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="24ae", ATTRS{idProduct}=="3040", MODE="0666", TAG+="uaccess"
+SUBSYSTEM=="usb", ATTRS{idVendor}=="24ae", ATTRS{idProduct}=="3040", MODE="0666", TAG+="uaccess"
